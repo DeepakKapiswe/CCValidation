@@ -3,14 +3,14 @@ module Validation
      where
 import Data.Char (isDigit)
 
--- | validate str will validate the length and characters 
+-- | validate str will validate the length and characters
 --   of the input str and call check function for further
 --   analysis if input is valid
 validateStr::String->Bool
 validateStr inp | (length inp == 16) && (all isDigit inp)  = check inp
                 | otherwise = False
 
--- | check the main function to do all the validations 
+-- | check the main function to do all the validations
 --   according to Luan Algo, Input is supposed to be a
 --   string of length 16 and all characters as digits
 check::String->Bool
@@ -33,6 +33,9 @@ f::Int->Int->Int
 f idx val | odd idx = 2*val
           | otherwise = val
 
+
+-- | This is the main function which will take user input
+--   and print result with message after validating it
 validateCard :: IO ()
 validateCard = do
   inp <- getLine
