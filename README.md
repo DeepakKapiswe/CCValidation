@@ -22,12 +22,12 @@ For the above example, the remainder would be 3.
 4. If the result equals 0, the credit card number is valid.
 
 
-Input Format
+Input Format --
 
 4012888888881881
 
 
-Output Format
+Output Format --
 
 Credit Card 4012888888881881 is valid.
 
